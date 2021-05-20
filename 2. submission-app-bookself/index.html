@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>BOOKSELF APP</title>
+</head>
+<body class="bg-light pb-3">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <h3 class="navbar-brand">BOOKSELF APP</h3>
+            
+            
+            <div class="d-flex">
+                <!-- <form id="form-search"> -->
+                    <input type="search" id="search" placeholder="search by title" class="form-control" autocomplete="off">
+                <!-- </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid pt-5">
+        <div class="row">
+            <!-- colom list buku belum/sudah di baca -->
+            <div class="col-12 col-md-8">
+
+                <div class="row">
+                    <!-- column buku belum selesai dibaca -->
+                    <div class="col-12">
+                        <div class="card">
+                            <div id="belum-selesai" class="card-body">
+                                <h5 class="mb-4">Belum selesai dibaca</h5>
+
+                                <div class="table-responsive-sm">
+                                    <table class="table table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Judul</th>
+                                                <th scope="col">Penulis</th>
+                                                <th scope="col">Tahun</th>
+                                                <th scope="col">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- <tr>
+                                                <td>1</td>
+                                                <td>gundala</td>
+                                                <td>Andrea hirata</td>
+                                                <td>2011</td>
+                                                <td>
+                                                    <button class="btn btn-sm btn-success">belum selesai</button>
+                                                    <button class="btn btn-sm btn-primary">edit</button>
+                                                    <button class="btn btn-sm btn-dark">hapus</button>
+                                                </td>
+                                            </tr> -->
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- column buku sudah selesai dibaca -->
+                    <div class="col-12 mt-4">
+                        <div class="card">
+                            <div id="selesai" class="card-body">
+                                <h5 class="mb-4">Sudah selesai dibaca</h5>
+
+                                <div class="table-responsive-sm">
+                                    <table class="table table-sm">
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Judul</th>
+                                            <th scope="col">Penulis</th>
+                                            <th scope="col">Tahun</th>
+                                            <th scope="col">Actions</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <!-- <tr>
+                                            <td>1</td>
+                                            <td>Laskar Pelangi</td>
+                                            <td>Andrea hirata</td>
+                                            <td>2001</td>
+                                            <td>
+                                                <button class="btn btn-sm btn-success">belum selesai</button>
+                                                <button class="btn btn-sm btn-primary">edit</button>
+                                                <button class="btn btn-sm btn-dark">hapus</button>
+                                            </td>
+                                        </tr> -->
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- column untuk form -->
+            <div class="col-12 col-md-4 mt-5 mt-md-0">
+                <div id="input-book" class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5 class="mb-4">TAMBAHKAN BUKU</h5>
+                        </div>
+                        <form id="form-input-book">
+                            <div class="mb-3">
+                              <label for="judul" class="form-label">JUDUL</label>
+                              <input type="text" required class="form-control" id="judul" placeholder="judul" name="judul">
+                            </div>
+                            <div class="mb-3">
+                              <label for="penulis" class="form-label">PENULIS</label>
+                              <input type="text" required class="form-control" id="penulis" placeholder="penulis" name="penulis">
+                            </div>
+                            <div class="mb-3">
+                              <label for="tahun" class="form-label">TAHUN</label>
+                              <input type="number" required class="form-control" id="tahun" placeholder="tahun" name="tahun">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="checkbox" name="checkbox">
+                              <label class="form-check-label" for="checkbox">selesai dibaca</label>
+                            </div>
+                      
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary">
+                                    + <span>belum selesai dibaca</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div id="update-book" class="card" hidden>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5 class="mb-4">UPDATE BUKU</h5>
+                        </div>
+                        <form id="form-update-book">
+                            <input type="hidden" name="id" value="">
+                            <div class="mb-3">
+                              <label for="judul1" class="form-label">JUDUL</label>
+                              <input type="text" required class="form-control" id="judul1" placeholder="judul" name="judul">
+                            </div>
+                            <div class="mb-3">
+                              <label for="penulis1" class="form-label">PENULIS</label>
+                              <input type="text" required class="form-control" id="penulis1" placeholder="penulis" name="penulis">
+                            </div>
+                            <div class="mb-3">
+                              <label for="tahun1" class="form-label">TAHUN</label>
+                              <input type="number" required class="form-control" id="tahun1" placeholder="tahun" name="tahun">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="checkbox1" name="checkbox">
+                              <label class="form-check-label" for="checkbox1">selesai dibaca</label>
+                            </div>
+                      
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-success">
+                                    update
+                                </button>
+                                <button type="button" class="btn btn-warning cancel-update">
+                                    cancel
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- delete modal -->
+    <div class="modal" id="modal-delete">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">HAPUS BUKU</h5>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm cancel">cancel</button>
+                <button type="button" class="btn btn-primary btn-sm hapus">hapus</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

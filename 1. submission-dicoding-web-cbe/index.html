@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/favicon.svg"/>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>CBE</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h3 onclick="scrollKe('header')">CBE</h3>
+
+            <span class="mdi mdi-24px mdi-menu"></span>
+
+            <ul>
+                <li><a href="#" data-target=".services-container">SERVICES</a></li>
+                <li><a href="#" data-target=".track">TRACK</a></li>
+                <li><a href="#" data-target=".about-us">ABOUT US</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <img src="assets/hero-img.svg" alt="hero-image" class="hero-img">
+
+            <section>
+                <h1>CEPET BANGET EXPRESS</h1>
+                <p>Kirim paket tanpa ribet, di jemput di antar dan sampai lebih cepat dengan harga termurah</p>
+                <a href="#" class="button" data-target=".services-container">OUR SERVICES</a>
+            </section>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="services-container">
+            <h2 class="services-title">SERVICES</h2>
+
+            <div class="services">
+                <article class="card">
+                    <header>
+                        <h4>Reguler</h4>
+                    </header>
+                    <div class="card-body">
+                        <p>paket pengiriman reguler dengan estimasi 1-2 hari keseluruh indonesia</p>
+                    </div>
+                    <footer>
+                        <p class="price">Rp 6.000 - 24.000 / kg</p>
+                    </footer>
+                </article>
+
+                <article class="card">
+                    <header>
+                        <h4>Triple S</h4>
+                    </header>
+                    <div class="card-body">
+                        <p>paket pengiriman kilat 'semalam saja sampai', paket akan sampai ketujuan dalam 24 jam</p>
+                    </div>
+                    <footer>
+                        <p class="price">Rp 9.000 - 32.000 / kg</p>
+                    </footer>
+                </article>
+
+                <article class="card">
+                    <header>
+                        <h4>Selow</h4>
+                    </header>
+                    <div class="card-body">
+                        <p>paket pengiriman ekonomis dengan estimasi 2-4 hari keseluruh indonesia</p>
+                    </div>
+                    <footer>
+                        <p class="price">Rp 3.000 - 12.000 / kg</p>
+                    </footer>
+                </article>
+                
+                <article class="card">
+                    <header>
+                        <h4>Luar Negeri</h4>
+                    </header>
+                    <div class="card-body">
+                        <p>adalah layanan pengiriman ke luar negeri, mencakup seluruh dunia dengan tarif flat, estimasi pengiriman 2-4 hari</p>
+                    </div>
+                    <footer>
+                        <p class="price">Rp 50.000 - 124.000 / kg</p>
+                    </footer>
+                </article>
+
+                <article class="card">
+                    <header>
+                        <h4>Mitra CBE</h4>
+                    </header>
+                    <div class="card-body">
+                        <p>
+                            kami menyediakan harga khusus jika usaha anda ingin bekerja sama dengan kami, semua kiriman akan sampai dalam 24 jam untuk pengiriman di indonesia dan 1-3 hari untuk pengiriman luar negeri
+                        </p>
+                    </div>
+                    <footer>
+                        <p class="price">Rp 5.000 - 119.000 / kg</p>
+                    </footer>
+                </article>
+
+                <article class="card">
+                    <header>
+                        <h4>Drone Delivery</h4>
+                    </header>
+                    <div class="card-body">
+                        <p>
+                            sebagai solusi di era pandemi, kami membuka layanan pengiriman menggunakan drone untuk wilayah jadetabek dengan ukuran maks paket 50cm X 30cm X 30cm dan berat maksimal 3kg
+                        </p>
+                    </div>
+                    <footer>
+                        <p class="price">Rp 15.000 - 20.000 / kg</p>
+                    </footer>
+                </article>
+            </div>
+        </section>
+
+        <section class="track">
+            <h2>LACAK KIRIMANMU</h2>
+            <small class="alert-cek-resi hidden"></small>
+            <form class="form_cek_resi">
+                <input type="text" name="resi" placeholder="NOMOR RESI" required>              
+                <button type="submit">LACAK</button>
+            </form>
+
+            <article class="card hidden">
+                <header>
+                    <small>NO RESI:</small>
+                    <h1 class="no-resi">000011112222</h1>
+                </header>
+                <div class="card-body">
+                    <section class="detail-kiriman">
+                        <h5 class="title">TUJUAN</h5>
+                        <p class="kota-tujuan">jakarta</p>
+                        <h5 class="title">PENERIMA</h5>
+                        <p class="penerima">Dodo yudhoyono</p>
+                    </section>
+                    
+                    <section class="status">
+                        <h5 class="title">DELIVERED</h5>
+                        <p class="tanggal">02-03-2021</p>
+                        <p class="keterangan">Paket diterima oleh diteras - (YBS) Yang Bersangkutan</p>
+                    </section>
+                </div>                
+            </article>
+        </section>
+
+        <section class="about-us">
+            <img src="assets/office.svg" alt="office">
+            <div class="text">
+                <h2>ABOUT US</h2>
+                <p>
+                    CEPET BANGET EKSPRESS berdiri pada tahun 2017 oleh <em>Dodo Yudhoyono</em> Bermula dengan 20 orang karyawan dan kapital 100 juta rupiah dan berkantor pusat di jakarta. CBE memulai kegiatan usahanya yang terpusat pada penanganan kegiatan kepabeanan, impor kiriman barang, dokumen serta pengantarannya dari luar negeri ke Indonesia.
+
+                </p>
+                <p>
+                    Sejak 2019 ini kami menargetkan segmen toko online(daring). Hal ini dikarenakan perusahaan melihat banyak klien berkembang ke e-commerce, dan saat ini telah menjadi mitra resmi dari beberapa e-commerce terbesar diindonesia
+                </p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-detail">
+                <h2>Contact</h2>
+                <ul>
+                    <li>
+                        <span class="mdi mdi-phone-in-talk"></span> 
+                        021 - 212 008
+                    </li>
+                    <li>
+                        <span class="mdi mdi-whatsapp"></span> 
+                        0800 212 234 008 
+                    </li>
+                    <li>
+                        <span class="mdi mdi-instagram"></span> 
+                        @cbe_official
+                    </li>
+                    <li>
+                        <span class="mdi mdi-twitter"></span> 
+                        @cbe_official
+                    </li>
+                    <li>
+                        <span class="mdi mdi-email"></span> 
+                        halo@cbe.com
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-form">
+                <h2>Kirim Pesan</h2>
+
+                <div class="alert-contact-form hidden">
+                    
+                </div>
+                <form>
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" placeholder="nama" required>
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="email" required>
+                    
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" rows="3" placeholder="pesan" required></textarea>
+
+                    <button type="submit">KIRIM</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <div class="open-aside-container">
+        <span class="mdi mdi-36px mdi-face open-aside" title="created by"></span>
+    </div>
+
+    <aside>
+        <span class="mdi mdi-36px mdi-chevron-right close-aside"></span>
+
+        <ul>
+            <li>
+                <img src="assets/avatar.svg" alt="profile">
+            </li>
+            <li>
+                <p>Dodo Yudhoyono</p>
+            </li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>Submission <a target="_blank" href="https://www.dicoding.com/">dicoding</a> Belajar Dasar Pemrograman Web &#169; 2021</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

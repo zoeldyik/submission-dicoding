@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* helper class */
+.open-ul{
+    display: flex;
+}
+
+.hidden{
+    display: none;
+}
+
+.show-aside{
+    margin-right: 0;
+}
+/* end helper class */
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+header nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    background-color: white;
+    z-index: 999;
+}
+
+header nav .mdi{
+    position: absolute;
+    right: 20px;
+}
+
+header nav .mdi:hover{
+  cursor: pointer;
+}
+
+header nav h3{
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+
+nav ul{
+    padding-left: 0;
+    margin-top: 30px;
+    text-align: center;
+    flex-direction: column;
+    display: none;
+}
+
+nav ul li{
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+}
+
+nav ul li a:active{
+    color: #6C63FF;
+}
+
+nav ul li a:hover{
+    color: #6C63FF;
+}
+
+
+
+/* hero */
+.hero{
+    padding: 50px 0;
+    background-color: white;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero section{
+    box-sizing: border-box;
+    padding: 40px 40px 0;
+    text-align: center;
+}
+
+.hero section p{
+    margin-top: 14px;
+}
+
+.hero section a.button{
+    display: inline-block;
+    margin-top: 20px;
+    border: 0;
+    background-color: #6C63FF;
+    color: white;
+    padding: 8px 14px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.hero section a.button:hover{
+    background-color: #5e56f5;
+}
+
+/* main */
+main{
+    padding: 50px 20px;
+    background-color: white;
+}
+
+main p{
+    font-size: 13px;
+    opacity: 0.87;
+}
+
+main .services-container{
+    margin: 70px 0;
+}
+
+main .services{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .services-title{
+    text-align: center;
+}
+
+main .services .card{
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: white;
+    flex-basis: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+main .services .card header{
+    padding: 8px 0;
+    color: #6C63FF;
+}
+
+main .services .card footer{
+    padding: 8px 0;
+    font-style: italic;
+}
+
+main .services .card footer p.price{
+    text-align: left;
+}
+
+/* main track */
+main .track{
+    background-image: url("assets/bg_track.png");
+    margin: 0 -20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+main .track h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+main .track form{
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+main .track form input{
+    width: 80%;
+    outline: none;
+    padding: 11px 20px;
+    box-sizing: border-box;
+}
+
+main .track form button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2px;
+    padding: 10px 14px;
+    background-color: white;
+    border:0;
+    color: rgba(0, 0, 0,.8);
+    font-weight: 600;
+    outline: 0;
+    cursor: pointer;
+}
+
+main .track form button:active{
+    outline: 0;
+}
+
+main .track form button:hover{
+    background-color: whitesmoke;
+}
+
+main .track .alert-cek-resi{
+    width: 80%;
+    color: #F9A826;
+    text-align: left;
+}
+
+main .track .card{
+    width: 80%;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 40px;
+    padding: 18px 20px;
+}
+
+main .track .card header small{ 
+    font-size: 12px;
+}
+
+main .track .card .card-body .title{
+    margin-top: 16px;
+    margin-bottom: 2px;
+}
+
+main .track .card .card-body > p{
+    margin-bottom: 10px;
+}
+
+
+
+
+/* about us */
+main .about-us{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .about-us img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+main .about-us .text h2{
+    margin-bottom: 16px;
+}
+
+main .about-us .text p{
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+
+/* contact */
+main .contact{
+    margin-top: 50px;
+}
+
+main .contact h2{
+    margin-bottom: 16px;
+}
+
+main .contact .contact-detail ul li{
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+/* form */
+
+main .contact .contact-form .alert-contact-form{
+    padding: 10px;
+    background-color: #F9A826;
+    border-radius: 4px;
+}
+
+main .contact .contact-form .alert-contact-form p{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+main .contact .contact-form{
+    margin-top: 50px;
+}
+
+main .contact input,
+main .contact textarea,
+main .contact button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+main .contact button{
+    background-color: #5e56f5;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border: 0;
+}
+
+
+/* footer */
+
+footer {
+    padding: 20px 40px;
+    text-align: center;
+    background-color: white;
+}
+
+footer p{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+footer p a{
+    color: #6C63FF;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 500;
+}
+
+footer p a:hover{
+    color: #5e56f5;
+    font-weight: 600;
+}
+
+
+/* aside */
+.open-aside{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: #5e56f5;
+    border-radius: 18px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside{
+    width: 300px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-right: -500px;
+    transition: 0.5s;
+    position: fixed;
+    z-index: 10000;
+    padding: 30px 10px;
+    background-image: url("assets/bg_track.png");
+    color: white;
+}
+
+aside .close-aside{
+    cursor: pointer;
+}
+
+
+aside ul li{
+    list-style: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+aside ul li img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    text-align: center;
+    margin-top: 40px;
+    border: 2px solid white;
+}
+
+@media only screen and (min-width: 768px) {
+    header nav{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header nav .mdi{
+        display: none;
+    }
+
+    header nav ul{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        margin-left: auto;
+    }
+
+    header nav ul li{
+        margin-left: 20px;
+    }
+
+    /* hero */
+    .hero{
+        flex-direction: row;
+        height: 500px;
+        padding-top: 140px;
+    }
+
+    .hero .hero-img{
+        max-width: 600px;
+    }
+
+    .hero section{
+        margin: 0 40px;
+        text-align: left;
+    }
+
+    .hero section h1{
+        font-size: 32px;
+    }
+
+    /* services */
+    main .services{
+        width: 940px;
+        box-sizing: border-box;
+        margin: auto;
+    }
+
+    main .services .card{
+        flex-basis: 49.5%;
+        padding:16px 18px;
+    }
+
+    main .services .card:nth-child(even){
+        margin-left: auto;
+    }
+
+
+    /* track */
+    main .track{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    main .track form{
+        width: 70%;
+    }
+
+    main .track form input{
+        width: 83%;
+    }
+
+    main .track form button{
+        width: 17%;
+    }
+
+    main .track .alert-cek-resi{
+        width: 70%;
+        margin-top: 8px;
+    }
+
+    main .track .card{
+        padding: 24px;
+        width: 70%;
+    }
+
+    main .track .card .card-body{
+        display: flex;
+    }
+    
+    main .track .card .card-body > section{
+        width: 50%;
+    }
+
+
+    /* about us */
+    main .about-us{
+        margin-top: 70px;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    main .about-us img{
+        max-width: 500px;
+        margin-left: 60px;
+    }
+    
+    main .about-us .text{
+        max-width: 380px;
+    }
+
+    /* contact */
+    main .contact{
+        box-sizing: border-box;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main .contact .contact-detail{
+        width: 400px;
+    }
+
+    main .contact .contact-detail ul li{
+        margin-bottom: 8px;
+    }
+
+
+
+    /* contact form */
+    main .contact .contact-form{
+        margin-right: 50px;
+        max-width: 500px;
+    }
+
+    main .contact .contact-form{
+        margin-top: 0;
+    }
+
+
+    /* aside */
+    .open-aside{
+        right: 20px;
+        bottom: 20px;
+    }
+}
